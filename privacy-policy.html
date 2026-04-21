@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Haul</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #060910; color: #eef4ff; line-height: 1.7; padding: 40px 24px; max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 28px; font-weight: 800; color: #22d3a0; margin-bottom: 8px; }
+  h2 { font-size: 18px; font-weight: 700; color: #eef4ff; margin: 32px 0 12px; }
+  p { color: rgba(238,244,255,0.7); margin-bottom: 16px; font-size: 15px; }
+  ul { color: rgba(238,244,255,0.7); margin: 0 0 16px 20px; font-size: 15px; }
+  li { margin-bottom: 8px; }
+  .date { color: rgba(238,244,255,0.35); font-size: 13px; margin-bottom: 40px; }
+  a { color: #22d3a0; text-decoration: none; }
+  .section { border-top: 1px solid rgba(255,255,255,0.06); padding-top: 24px; }
+</style>
+</head>
+<body>
+
+<h1>Privacy Policy</h1>
+<p class="date">Last updated: April 21, 2026</p>
+
+<p>Haul ("the app") is operated by Jackson Rohrs ("I", "me", or "my"). This Privacy Policy explains how I collect, use, and protect your information when you use Haul on your iOS device.</p>
+
+<div class="section">
+<h2>Information I Collect</h2>
+<p>Haul is designed to work primarily on your device. Here is what the app collects and stores:</p>
+<ul>
+  <li><strong>Profile data</strong> — age, height, weight, fitness goal, and dietary preferences you enter during onboarding. This is stored locally on your device using AsyncStorage.</li>
+  <li><strong>Pantry data</strong> — food items you scan or search, including their nutritional information. Stored locally on your device.</li>
+  <li><strong>Meal plan data</strong> — the AI-generated meal plans created for you. Stored locally on your device.</li>
+  <li><strong>Barcode scans</strong> — when you scan a barcode, the barcode number is sent to Open Food Facts (openfoodfacts.org) and the USDA FoodData Central API to retrieve nutritional information. No personal information is sent with these requests.</li>
+  <li><strong>Meal plan generation</strong> — your pantry contents and profile (goal, macros, meal preferences) are sent to a Supabase Edge Function which calls the Anthropic Claude API to generate your meal plan. No personally identifiable information such as your name or email is included in these requests.</li>
+  <li><strong>Purchase information</strong> — if you subscribe, payment is processed by Apple. I use RevenueCat to manage subscription status. RevenueCat receives a randomized identifier and subscription status — not your name, email, or payment details.</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>Information I Do Not Collect</h2>
+<ul>
+  <li>I do not collect your name, email address, or any contact information unless you contact me directly.</li>
+  <li>I do not collect location data.</li>
+  <li>I do not use advertising SDKs or sell your data to third parties.</li>
+  <li>I do not track you across other apps or websites.</li>
+  <li>I do not have access to your payment information — all payments are handled by Apple.</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>Third-Party Services</h2>
+<p>Haul uses the following third-party services to function:</p>
+<ul>
+  <li><strong>Open Food Facts</strong> — an open-source food database used for barcode lookups. Privacy policy at openfoodfacts.org/privacy.</li>
+  <li><strong>USDA FoodData Central</strong> — a public food database operated by the U.S. Department of Agriculture.</li>
+  <li><strong>Anthropic Claude API</strong> — used to generate personalized meal plans. Requests include your pantry and profile data but not personally identifiable information. Anthropic's privacy policy is at anthropic.com/privacy.</li>
+  <li><strong>Supabase</strong> — used to host the meal plan generation function. Supabase's privacy policy is at supabase.com/privacy.</li>
+  <li><strong>RevenueCat</strong> — used to manage subscription status. RevenueCat's privacy policy is at revenuecat.com/privacy.</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>Data Storage and Security</h2>
+<p>Most of your data is stored locally on your device and never transmitted to my servers. Data sent to third-party APIs (barcode lookups and meal plan generation) is used only to fulfill your request and is not stored by me.</p>
+<p>I take reasonable measures to protect your information but no method of electronic storage or transmission is 100% secure.</p>
+</div>
+
+<div class="section">
+<h2>Children's Privacy</h2>
+<p>Haul is not directed at children under the age of 13. I do not knowingly collect personal information from children under 13. If you believe a child has provided personal information, please contact me and I will delete it promptly.</p>
+</div>
+
+<div class="section">
+<h2>Your Rights</h2>
+<p>Since most data is stored locally on your device, you can delete it at any time by going to Settings → Reset all data within the app, or by uninstalling Haul.</p>
+<p>To request deletion of any data associated with your account, contact me at <a href="mailto:helphaulapp@outlook.com">helphaulapp@outlook.com</a>.</p>
+</div>
+
+<div class="section">
+<h2>Changes to This Policy</h2>
+<p>I may update this Privacy Policy from time to time. Changes will be posted at this URL with an updated date. Continued use of the app after changes constitutes acceptance of the new policy.</p>
+</div>
+
+<div class="section">
+<h2>Contact</h2>
+<p>If you have questions about this Privacy Policy, contact me at:<br>
+<a href="mailto:helphaulapp@outlook.com">helphaulapp@outlook.com</a><br>
+Jackson Rohrs — Ohio, United States</p>
+</div>
+
+</body>
+</html>
